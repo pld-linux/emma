@@ -5,8 +5,6 @@ Version:	0.8
 Release:	0
 License:	GPL
 Group:		Applications/Databases
-Group(de):	Applikationen/Dateibanken
-Group(pl):	Aplikacje/Bazy danych
 Source0:	http://rainbow.mimuw.edu.pl/~la181249/emma/download-count.php3?get=packages/%{name}-%{version}-1.tar.gz
 URL:		http://rainbow.mimuw.edu.pl/~la181249/
 BuildRequires:	python-devel >= 1.5
