@@ -1,0 +1,68 @@
+--- emma-0.8/doc/C/Makefile.am.orig	Fri Aug 11 11:09:45 2000
++++ emma-0.8/doc/C/Makefile.am	Fri Jul  4 11:28:22 2003
+@@ -22,15 +22,15 @@
+ 	-cp images/*.gif images/*.jpg $(distdir)/images
+ 
+ install-data-local: emma/book1.html
+-	$(mkinstalldirs) $(emma_helpdir)/images
++	$(mkinstalldirs) $(DESTDIR)$(emma_helpdir)/images
+ 	-for file in $(srcdir)/emma/*.html $(srcdir)/emma/*.css; do \
+ 	basefile=`basename $$file`; \
+-	$(INSTALL_DATA) $(srcdir)/$$file $(emma_helpdir)/$$basefile; \
++	$(INSTALL_DATA) $(srcdir)/$$file $(DESTDIR)$(emma_helpdir)/$$basefile; \
+ 	done
+ 	-for file in $(srcdir)/images/*.jpg $(srcdir)/images/*.gif; do \
+-	$(INSTALL_DATA) $(srcdir)/$$file $(emma_helpdir)/images;\
++	$(INSTALL_DATA) $(srcdir)/$$file $(DESTDIR)$(emma_helpdir)/images;\
+ 	done
+-	$(INSTALL_DATA) $(srcdir)/topic.dat $(emma_helpdir)
++	$(INSTALL_DATA) $(srcdir)/topic.dat $(DESTDIR)$(emma_helpdir)
+ 
+ emma/book1.html: $(SGML_FILES)
+ 	-db2html emma.sgml
+--- emma-0.8/doc/ja/Makefile.am.orig	Sat Aug 26 15:47:20 2000
++++ emma-0.8/doc/ja/Makefile.am	Fri Jul  4 11:28:43 2003
+@@ -22,15 +22,15 @@
+ 	-cp images/*.gif images/*.jpg $(distdir)/images
+ 
+ install-data-local: emma/book1.html
+-	$(mkinstalldirs) $(emma_helpdir)/images
++	$(mkinstalldirs) $(DESTDIR)$(emma_helpdir)/images
+ 	-for file in $(srcdir)/emma/*.html $(srcdir)/emma/*.css; do \
+ 	basefile=`basename $$file`; \
+-	$(INSTALL_DATA) $(srcdir)/$$file $(emma_helpdir)/$$basefile; \
++	$(INSTALL_DATA) $(srcdir)/$$file $(DESTDIR)$(emma_helpdir)/$$basefile; \
+ 	done
+ 	-for file in $(srcdir)/images/*.jpg $(srcdir)/images/*.gif; do \
+-	$(INSTALL_DATA) $(srcdir)/$$file $(emma_helpdir)/images;\
++	$(INSTALL_DATA) $(srcdir)/$$file $(DESTDIR)$(emma_helpdir)/images;\
+ 	done
+-	$(INSTALL_DATA) $(srcdir)/topic.dat $(emma_helpdir)
++	$(INSTALL_DATA) $(srcdir)/topic.dat $(DESTDIR)$(emma_helpdir)
+ 
+ emma/book1.html: $(SGML_FILES)
+ 	-db2html emma.sgml
+--- emma-0.8/configure.in.orig	Fri Nov  3 13:06:57 2000
++++ emma-0.8/configure.in	Fri Jul  4 11:32:37 2003
+@@ -19,8 +19,6 @@
+ AC_ARG_PROGRAM
+ AM_PROG_LIBTOOL
+ 
+-AM_CONDITIONAL(FALSE, test foo = bar)
+-
+ AC_CHECK_LIB(pthread, pthread_create)
+ 
+ dnl If GNOME is found, run the script in square brackets.
+--- emma-0.8/data/Makefile.am.orig	Fri Sep 29 18:13:51 2000
++++ emma-0.8/data/Makefile.am	Fri Jul  4 11:34:33 2003
+@@ -4,8 +4,8 @@
+ 
+ EXTRA_DIST = \
+ 	emma.py
+-	$(LIMIT_EXTENSION) \
++	$(LIMIT_EXTENSIONS) \
+ 	$(REPORT_FILTERS) \
+ 	report_template.py
+ 
+-pkgdata_DATA = $(LIMIT_EXTENSION) $(REPORT_FILTERS)
++pkgdata_DATA = $(LIMIT_EXTENSIONS) $(REPORT_FILTERS)
