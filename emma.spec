@@ -7,11 +7,12 @@ License:	GPL
 Group:		Applications/Databases
 Group(de):	Applikationen/Dateibanken
 Group(pl):	Aplikacje/Bazy danych
-Source0:	%{name}-%{version}-1.tar.gz
+Source0:	http://rainbow.mimuw.edu.pl/~la181249/emma/download-count.php3?get=packages/%{name}-%{version}-1.tar.gz
 URL:		http://rainbow.mimuw.edu.pl/~la181249/
 BuildRequires:	python-devel >= 1.5
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	gnome-libs-devel
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
