@@ -6,6 +6,7 @@ Release:	0
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://rainbow.mimuw.edu.pl/~la181249/emma/download-count.php3?get=packages/%{name}-%{version}-1.tar.gz
+# Source0-md5:	7dc37a41b9fb2cfc69a3c1a3ac22f102
 URL:		http://rainbow.mimuw.edu.pl/~la181249/
 BuildRequires:	python-devel >= 1.5
 BuildRequires:	gtk+-devel >= 1.2.0
