@@ -20,10 +20,10 @@ simple in design, but extensible through embeded python interface.
 Install it if you want to keep track of your money.
 
 %description -l pl
-Ten program pozwoli Ci ³atwo zarz±dzaæ Twoimi przychodami oraz wydatkami.
-Prosty w konstrukcji, ale ³atwy w rozbudowie dziêki wbudowanemu interfejsowi
-jêzyka Python. Zainstaluj Emma je¶li chcesz wiedzieæ, gdzie znikaj± Twoje
-pieni±dze.
+Ten program pozwoli Ci ³atwo zarz±dzaæ Twoimi przychodami oraz
+wydatkami. Prosty w konstrukcji, ale ³atwy w rozbudowie dziêki
+wbudowanemu interfejsowi jêzyka Python. Zainstaluj Emma je¶li chcesz
+wiedzieæ, gdzie znikaj± Twoje pieni±dze.
 
 %prep
 %setup -q
