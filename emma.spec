@@ -1,5 +1,5 @@
 Summary:	Money management program for GNOME/Gtk+
-Summary(pl):	Program do zarz±dzania pieniêdzmi
+Summary(pl.UTF-8):   Program do zarzÄ…dzania pieniÄ™dzmi
 Name:		emma
 Version:	0.8
 Release:	0.1
@@ -24,11 +24,11 @@ This program allows to easy manage your incomes and expenses. It is
 simple in design, but extensible through embeded python interface.
 Install it if you want to keep track of your money.
 
-%description -l pl
-Ten program pozwoli Ci ³atwo zarz±dzaæ Twoimi przychodami oraz
-wydatkami. Prosty w konstrukcji, ale ³atwy w rozbudowie dziêki
-wbudowanemu interfejsowi jêzyka Python. Zainstaluj Emma je¶li chcesz
-wiedzieæ, gdzie znikaj± Twoje pieni±dze.
+%description -l pl.UTF-8
+Ten program pozwoli Ci Å‚atwo zarzÄ…dzaÄ‡ Twoimi przychodami oraz
+wydatkami. Prosty w konstrukcji, ale Å‚atwy w rozbudowie dziÄ™ki
+wbudowanemu interfejsowi jÄ™zyka Python. Zainstaluj Emma jeÅ›li chcesz
+wiedzieÄ‡, gdzie znikajÄ… Twoje pieniÄ…dze.
 
 %prep
 %setup -q
