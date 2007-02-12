@@ -1,5 +1,5 @@
 Summary:	Money management program for GNOME/Gtk+
-Summary(pl.UTF-8):   Program do zarządzania pieniędzmi
+Summary(pl.UTF-8):	Program do zarządzania pieniędzmi
 Name:		emma
 Version:	0.8
 Release:	0.1
