@@ -12,7 +12,7 @@ Patch1:		%{name}-po.patch
 URL:		http://rainbow.mimuw.edu.pl/~la181249/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libtool
